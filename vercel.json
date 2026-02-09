@@ -1,4 +1,4 @@
 {
-  "buildCommand": "mkdir -p public && cp templates/*.html public/ && cp -r static/* public/ 2>/dev/null || true",
-  "outputDirectory": "public"
+  "buildCommand": "echo 'Static frontend'",
+  "outputDirectory": "frontend"
 }

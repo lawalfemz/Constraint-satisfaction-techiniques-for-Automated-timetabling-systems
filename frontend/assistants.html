@@ -1,0 +1,2881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Caleb University Assistant Professors Timetable</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f8fafc;
+  color: #1e293b;
+  padding: 20px;
+}
+.container { max-width: 1400px; margin: 0 auto; }
+.header {
+  background: linear-gradient(135deg, #0f4c75, #3282b8);
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+  .header .logo {
+    width: 96px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto 12px;
+  }
+.filters select {
+  padding: 8px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: white;
+  font-size: 0.95em;
+  width: 300px;
+  margin-bottom: 20px;
+}
+.assistant-card {
+  background: white;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  overflow: hidden;
+  display: none;
+}
+.assistant-header {
+  background: #0ea5e9;
+  color: white;
+  padding: 16px 24px;
+  font-size: 1.4em;
+  font-weight: 700;
+}
+.days-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  padding: 20px;
+}
+.day-card {
+  background: white;
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+.day-header {
+  font-weight: 700;
+  font-size: 1.15em;
+  color: #0f4c75;
+  margin-bottom: 10px;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #cbd5e1;
+}
+.assignment {
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+}
+.assignment.tutorial {
+  background: #ffecb3;
+  border-left: 4px solid #ffa000;
+}
+.assignment.lab {
+  background: #dcfce7;
+  border-left: 4px solid #22c55e;
+}
+.course-title {
+  font-weight: 700;
+  color: #1e3a8a;
+  display: block;
+  margin-bottom: 4px;
+}
+.details {
+  color: #475569;
+  font-size: 0.85em;
+  line-height: 1.4;
+}
+.empty {
+  color: #94a3b8;
+  font-style: italic;
+  text-align: center;
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <img src="OIP.webp" alt="Caleb University logo" class="logo">
+    <h1>👩‍🏫 Caleb University Assistant Professors Timetable</h1>
+    <p>Generated on January 26, 2026 at 04:21 PM</p>
+  </div>
+  <div class="filters">
+    <select id="assistantFilter">
+      <option value="all">Select Assistant Professor</option>
+<option value="AP18">Eng. Alaa Essam</option><option value="AP26">Eng. Aya Tarek</option><option value="AP19">Eng. Bassant Tolba</option><option value="AP01">Eng. Fatma Elsayed</option><option value="AP09">Eng. Heba Abdelkader</option><option value="AP13">Eng. Laila Ibrahim</option><option value="AP17">Eng. Maria Mounir</option><option value="AP04">Eng. Mariam Ismael</option><option value="AP07">Eng. Menna Hamdi</option><option value="AP11">Eng. Menna Magdy</option><option value="AP12">Eng. Nada Ahmed</option><option value="AP02">Eng. Nada Essam</option><option value="AP05">Eng. Nada Hamdy</option><option value="AP25">Eng. Nouran Moussa</option><option value="AP10">Eng. Nourhan Waleed</option><option value="AP08">Eng. Omnya Ramadan</option><option value="AP15">Eng. Rana Mohamed</option><option value="AP16">Eng. Saeed Mostafa</option><option value="AP03">Eng. Salma Alashry</option><option value="AP06">Eng. Salma Waleed</option><option value="AP27">Eng. Sama Osama</option><option value="AP14">Eng. Tarek Salah</option><option value="AP28">Eng. Zeina Shreif</option><option value="AP21">Eng.Ahmed Mohamed</option><option value="AP22">Eng.Mariem Nagy</option><option value="AP24">Eng.Mohamed ElSayed</option><option value="AP31">Eng.Mohamed Fedaa</option><option value="AP30">Eng.Omar El Faramawy</option><option value="AP29">Eng.Omar Hamed</option><option value="AP23">Eng.Sara Ahmed</option><option value="AP20">Eng.Sara Tarek</option>
+    </select>
+  </div>
+<div class="assistant-card" data-assistant="AP01"><div class="assistant-header">Eng. Fatma Elsayed</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Computer Networks (CNC311)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S1_BIF_L3<br>
+                            📍 B17 – G.19<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Advanced Data Mining (AID417)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S2_AID_L4<br>
+                            📍 B17 – G.12<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Advanced Data Mining (AID417)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S1_AID_L4<br>
+                            📍 B25 – G.17<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Monday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Advanced Data Mining (AID417)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S4_AID_L4<br>
+                            📍 B25 – F1.11<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Computer Networks (CNC311)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S1_CSC_L3<br>
+                            📍 B26 – G.20<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Computer Networks (CNC311)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S2_AID_L3<br>
+                            📍 B17 – F1.18<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Tuesday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Computer Networks (CNC311)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S4_CNC_L3<br>
+                            📍 B26 – F1.19<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Computer Networks (CNC311)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S3_AID_L3<br>
+                            📍 B8 – F1.07<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Advanced Data Mining (AID417)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S4_AID_L4<br>
+                            📍 B26 – G.13<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Computer Networks (CNC311)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S1_CNC_L3<br>
+                            📍 B26 – G.03<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Wednesday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Computer Networks (CNC311)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S1_AID_L3<br>
+                            📍 B18 – G.19<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Computer Networks (CNC311)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S2_CNC_L3<br>
+                            📍 B26 – G.18<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Advanced Data Mining (AID417)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S3_AID_L4<br>
+                            📍 B18 – G.19<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Advanced Data Mining (AID417)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S1_AID_L4<br>
+                            📍 B10 – F1.18<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Thursday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Computer Networks (CNC311)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S3_CNC_L3<br>
+                            📍 B26 – F1.04<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Advanced Data Mining (AID417)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S2_AID_L4<br>
+                            📍 B26 – G.04<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Advanced Data Mining (AID417)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S3_AID_L4<br>
+                            📍 B25 – G.16<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Computer Networks (CNC311)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S4_AID_L3<br>
+                            📍 B18 – G.02<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div></div></div><div class="assistant-card" data-assistant="AP02"><div class="assistant-header">Eng. Nada Essam</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div>
+                        <div class="assignment tutorial">
+                          <span class="course-title">BIG Data Analytics & Visualization (AID411)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S2_AID_L4<br>
+                            📍 B25 – G.16<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Monday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">BIG Data Analytics & Visualization (AID411)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S1_AID_L4<br>
+                            📍 B18 – G.20<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">BIG Data Analytics & Visualization (AID411)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S4_AID_L4<br>
+                            📍 B26 – G.13<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Tuesday</div>
+                        <div class="assignment tutorial">
+                          <span class="course-title">BIG Data Analytics & Visualization (AID411)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S1_AID_L4<br>
+                            📍 B18 – G.02<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Wednesday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">BIG Data Analytics & Visualization (AID411)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S2_AID_L4<br>
+                            📍 B17 – G.19<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">BIG Data Analytics & Visualization (AID411)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S3_AID_L4<br>
+                            📍 B18 – G.20<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">BIG Data Analytics & Visualization (AID411)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S4_AID_L4<br>
+                            📍 B26 – F1.12<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Thursday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">BIG Data Analytics & Visualization (AID411)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S3_AID_L4<br>
+                            📍 B25 – G.17<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div></div></div><div class="assistant-card" data-assistant="AP03"><div class="assistant-header">Eng. Salma Alashry</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Database Systems (CNC314)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S2_AID_L3<br>
+                            📍 B26 – G.13<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Monday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Database Systems (CNC314)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S1_AID_L3<br>
+                            📍 B18 – G.11<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Database Systems (CNC314)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S4_CNC_L3<br>
+                            📍 B10 – F1.10<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Database Systems (CNC314)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S1_BIF_L3<br>
+                            📍 B18 – G.20<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Tuesday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Database Systems (CNC314)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S2_CNC_L3<br>
+                            📍 B17 – G.07<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Database Systems (CNC314)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S4_AID_L3<br>
+                            📍 B7 – F1.22<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Wednesday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Database Systems (CNC314)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S3_CNC_L3<br>
+                            📍 B9 – F1.13<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Database Systems (CNC314)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S3_AID_L3<br>
+                            📍 B25 – G.17<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Thursday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Database Systems (CNC314)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S1_CSC_L3<br>
+                            📍 B7 – F1.20<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Database Systems (CNC314)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S1_CNC_L3<br>
+                            📍 B10 – F1.10<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div></div></div><div class="assistant-card" data-assistant="AP04"><div class="assistant-header">Eng. Mariam Ismael</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Fundamentals of Programming (CSC111)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S4_L1<br>
+                            📍 B25 – G.02<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Fundamentals of Programming (CSC111)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S7_L1<br>
+                            📍 B25 – G.02<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Fundamentals of Cybersecurity (CNC411)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S4_CNC_L4<br>
+                            📍 B26 – G.12<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Fundamentals of Programming (CSC111)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S1_L1<br>
+                            📍 B7 – F1.21<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Monday</div>
+                        <div class="assignment tutorial">
+                          <span class="course-title">Fundamentals of Cybersecurity (CNC411)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S3_CNC_L4<br>
+                            📍 B25 – F1.10<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Fundamentals of Programming (CSC111)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S6_L1<br>
+                            📍 B9 – F1.14<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Fundamentals of Programming (CSC111)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S3_L1<br>
+                            📍 B7 – F1.21<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Fundamentals of Cybersecurity (CNC411)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S2_CNC_L4<br>
+                            📍 B9 – F1.05<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Tuesday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Fundamentals of Cybersecurity (CNC411)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S3_CNC_L4<br>
+                            📍 B25 – F1.13<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Fundamentals of Programming (CSC111)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S8_L1<br>
+                            📍 B10 – F1.07<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Fundamentals of Programming (CSC111)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S10_L1<br>
+                            📍 B25 – G.16<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Fundamentals of Cybersecurity (CNC411)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S1_CNC_L4<br>
+                            📍 B26 – F1.12<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Wednesday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Fundamentals of Cybersecurity (CNC411)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S2_CNC_L4<br>
+                            📍 B18 – G.16<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Fundamentals of Programming (CSC111)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S12_L1<br>
+                            📍 B10 – F1.06<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Fundamentals of Programming (CSC111)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S9_L1<br>
+                            📍 B26 – G.03<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Fundamentals of Programming (CSC111)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S11_L1<br>
+                            📍 B26 – F1.03<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Thursday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Fundamentals of Cybersecurity (CNC411)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S1_CNC_L4<br>
+                            📍 B17 – F1.14<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Fundamentals of Programming (CSC111)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S2_L1<br>
+                            📍 B26 – G.03<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Fundamentals of Programming (CSC111)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S5_L1<br>
+                            📍 B10 – F1.11<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div></div></div><div class="assistant-card" data-assistant="AP06"><div class="assistant-header">Eng. Salma Waleed</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div>
+                        <div class="assignment tutorial">
+                          <span class="course-title">Computer Graphics and Visualization (CSC317)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S1_CNC_L3<br>
+                            📍 B18 – G.03<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Mathematics of Data Science (AID311)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S4_AID_L3<br>
+                            📍 B8 – F1.10<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Mathematics of Data Science (AID311)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S4_AID_L3<br>
+                            📍 B10 – F1.10<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Mathematics of Data Science (AID311)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S1_AID_L3<br>
+                            📍 B7 – F1.22<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Monday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Mathematics of Data Science (AID311)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S1_AID_L3<br>
+                            📍 B17 – G.20<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Intelligent Systems (AID312)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S4_AID_L3<br>
+                            📍 B17 – G.19<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Intelligent Systems (AID312)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S2_CNC_L3<br>
+                            📍 B25 – F1.10<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Mathematics of Data Science (AID311)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S3_AID_L3<br>
+                            📍 B9 – F1.04<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Tuesday</div>
+                        <div class="assignment tutorial">
+                          <span class="course-title">Computer Graphics and Visualization (CSC317)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S3_CNC_L3<br>
+                            📍 B18 – G.02<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Computer Graphics and Visualization (CSC317)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S2_CNC_L3<br>
+                            📍 B10 – F1.08<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Intelligent Systems (AID312)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S1_AID_L3<br>
+                            📍 B7 – F1.24<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Mathematics of Data Science (AID311)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S2_AID_L3<br>
+                            📍 B26 – G.20<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Wednesday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Mathematics of Data Science (AID311)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S2_AID_L3<br>
+                            📍 B8 – F1.10<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Intelligent Systems (AID312)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S3_CNC_L3<br>
+                            📍 B26 – F1.03<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Computer Graphics and Visualization (CSC317)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S1_CNC_L3<br>
+                            📍 B17 – F1.14<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Computer Graphics and Visualization (CSC317)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S2_CNC_L3<br>
+                            📍 B26 – G.03<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Thursday</div>
+                        <div class="assignment tutorial">
+                          <span class="course-title">Mathematics of Data Science (AID311)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S3_AID_L3<br>
+                            📍 B25 – F1.10<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Intelligent Systems (AID312)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S1_CNC_L3<br>
+                            📍 B26 – G.12<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Intelligent Systems (AID312)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S2_AID_L3<br>
+                            📍 B10 – F1.11<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Intelligent Systems (AID312)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S3_AID_L3<br>
+                            📍 B9 – F1.13<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div></div></div><div class="assistant-card" data-assistant="AP07"><div class="assistant-header">Eng. Menna Hamdi</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div>
+                        <div class="assignment tutorial">
+                          <span class="course-title">Foundations of Information Systems (CNC312)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S4_CNC_L3<br>
+                            📍 B18 – G.12<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Networks and Web Programming (CNC111)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S1_L2<br>
+                            📍 B25 – F1.13<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Foundations of Information Systems (CNC312)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S4_CNC_L3<br>
+                            📍 B17 – G.02<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Foundations of Information Systems (CNC312)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S2_CNC_L3<br>
+                            📍 B17 – G.07<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Monday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Networks and Web Programming (CNC111)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S6_L2<br>
+                            📍 B10 – F1.10<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Networks and Web Programming (CNC111)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S2_L2<br>
+                            📍 B17 – G.02<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Foundations of Information Systems (CNC312)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S1_CNC_L3<br>
+                            📍 B7 – F1.20<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Tuesday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Foundations of Information Systems (CNC312)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S1_CNC_L3<br>
+                            📍 B17 – F1.09<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Networks and Web Programming (CNC111)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S9_L2<br>
+                            📍 B17 – F1.17<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Foundations of Information Systems (CNC312)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S2_CNC_L3<br>
+                            📍 B10 – F1.06<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Wednesday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Networks and Web Programming (CNC111)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S5_L2<br>
+                            📍 B25 – F1.10<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Networks and Web Programming (CNC111)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S7_L2<br>
+                            📍 B7 – F1.21<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Networks and Web Programming (CNC111)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S8_L2<br>
+                            📍 B26 – G.12<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Thursday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Networks and Web Programming (CNC111)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S3_L2<br>
+                            📍 B17 – F1.08<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Foundations of Information Systems (CNC312)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S3_CNC_L3<br>
+                            📍 B8 – F1.06<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Networks and Web Programming (CNC111)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S4_L2<br>
+                            📍 B26 – G.20<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Foundations of Information Systems (CNC312)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S3_CNC_L3<br>
+                            📍 B17 – F1.18<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div></div></div><div class="assistant-card" data-assistant="AP08"><div class="assistant-header">Eng. Omnya Ramadan</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div>
+                        <div class="assignment tutorial">
+                          <span class="course-title">Computer Organization (CSE214)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S9_L2<br>
+                            📍 B17 – G.02<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Computer Organization (CSE214)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S9_L2<br>
+                            📍 B17 – G.19<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Computer Organization (CSE214)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S1_L2<br>
+                            📍 B7 – F1.20<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Computer Organization (CSE214)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S2_L2<br>
+                            📍 B25 – F1.13<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Monday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Computer Organization (CSE214)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S1_L2<br>
+                            📍 B26 – G.03<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Computer Organization (CSE214)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S7_L2<br>
+                            📍 B10 – F1.11<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Computer Organization (CSE214)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S6_L2<br>
+                            📍 B26 – F1.03<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Computer Organization (CSE214)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S2_L2<br>
+                            📍 B26 – G.20<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Tuesday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Computer Organization (CSE214)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S7_L2<br>
+                            📍 B25 – G.04<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Computer Organization (CSE214)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S8_L2<br>
+                            📍 B17 – G.12<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Computer Organization (CSE214)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S3_L2<br>
+                            📍 B18 – G.02<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Computer Organization (CSE214)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S8_L2<br>
+                            📍 B25 – F1.10<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Wednesday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Seminar and Project-Based Learning on CSIT (CSC315)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S1_BIF_L3<br>
+                            📍 B18 – G.04<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Computer Organization (CSE214)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S4_L2<br>
+                            📍 B17 – G.12<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Computer Organization (CSE214)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S5_L2<br>
+                            📍 B26 – G.07<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Thursday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Computer Organization (CSE214)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S4_L2<br>
+                            📍 B7 – F1.23<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Computer Organization (CSE214)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S5_L2<br>
+                            📍 B10 – F1.06<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Computer Organization (CSE214)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S6_L2<br>
+                            📍 B18 – G.12<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Computer Organization (CSE214)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S3_L2<br>
+                            📍 B26 – G.18<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div></div></div><div class="assistant-card" data-assistant="AP10"><div class="assistant-header">Eng. Nourhan Waleed</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div><div class="empty">Free</div></div><div class="day-card"><div class="day-header">Monday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Intelligent Systems (AID312)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S1_BIF_L3<br>
+                            📍 B9 – F1.13<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Intelligent Systems (AID312)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S4_CNC_L3<br>
+                            📍 B17 – G.12<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Tuesday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Intelligent Systems (AID312)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S1_CSC_L3<br>
+                            📍 B26 – G.06<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Wednesday</div><div class="empty">Free</div></div><div class="day-card"><div class="day-header">Thursday</div><div class="empty">Free</div></div></div></div><div class="assistant-card" data-assistant="AP11"><div class="assistant-header">Eng. Menna Magdy</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Software Engineering (CSC211)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S6_L2<br>
+                            📍 B7 – F1.23<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Software Engineering (CSC211)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S9_L2<br>
+                            📍 B7 – F1.22<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Monday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Computer Graphics and Visualization (CSC317)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S3_CNC_L3<br>
+                            📍 B17 – F1.17<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Software Engineering (CSC211)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S4_L2<br>
+                            📍 B26 – F1.19<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Computer Graphics and Visualization (CSC317)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S1_CSC_L3<br>
+                            📍 B18 – G.07<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Software Engineering (CSC211)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S3_L2<br>
+                            📍 B9 – F1.13<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Tuesday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Software Engineering (CSC211)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S2_L2<br>
+                            📍 B8 – F1.11<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Software Engineering (CSC211)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S8_L2<br>
+                            📍 B9 – F1.05<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Software Engineering (CSC211)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S7_L2<br>
+                            📍 B25 – G.05<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Wednesday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Software Engineering (CSC211)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S5_L2<br>
+                            📍 B9 – F1.22<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Computer Graphics and Visualization (CSC317)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S4_CNC_L3<br>
+                            📍 B7 – F1.24<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Computer Graphics and Visualization (CSC317)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S4_CNC_L3<br>
+                            📍 B26 – F1.19<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Computer Graphics and Visualization (CSC317)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S1_CSC_L3<br>
+                            📍 B10 – F1.06<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Thursday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Software Engineering (CSC211)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S1_L2<br>
+                            📍 B25 – F1.10<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div></div></div><div class="assistant-card" data-assistant="AP13"><div class="assistant-header">Eng. Laila Ibrahim</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div>
+                        <div class="assignment tutorial">
+                          <span class="course-title">Digital Logic Design (ECE111)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S5_L1<br>
+                            📍 B9 – F1.14<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Physics 1 (PHY113)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S4_L1<br>
+                            📍 B26 – G.07<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Physics 1 (PHY113)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S3_L1<br>
+                            📍 B26 – G.04<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Physics 1 (PHY113)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S5_L1<br>
+                            📍 B9 – F1.14<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Monday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Digital Logic Design (ECE111)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S3_L1<br>
+                            📍 B17 – F1.14<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Physics 1 (PHY113)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S4_L1<br>
+                            📍 B18 – G.07<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Physics 1 (PHY113)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S2_L1<br>
+                            📍 B26 – G.06<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Digital Logic Design (ECE111)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S3_L1<br>
+                            📍 B26 – F1.03<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Tuesday</div>
+                        <div class="assignment tutorial">
+                          <span class="course-title">Physics 1 (PHY113)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S3_L1<br>
+                            📍 B18 – G.11<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Digital Logic Design (ECE111)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S2_L1<br>
+                            📍 B7 – F1.21<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Digital Logic Design (ECE111)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S4_L1<br>
+                            📍 B17 – G.02<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Digital Logic Design (ECE111)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S2_L1<br>
+                            📍 B18 – G.11<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Wednesday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Physics 1 (PHY113)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S1_L1<br>
+                            📍 B18 – G.20<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Physics 1 (PHY113)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S1_L1<br>
+                            📍 B17 – F1.13<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Physics 1 (PHY113)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S2_L1<br>
+                            📍 B7 – F1.01<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Physics 1 (PHY113)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S7_L1<br>
+                            📍 B18 – G.02<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Thursday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Physics 1 (PHY113)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S5_L1<br>
+                            📍 B9 – F1.22<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Digital Logic Design (ECE111)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S1_L1<br>
+                            📍 B7 – F1.22<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Digital Logic Design (ECE111)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S1_L1<br>
+                            📍 B26 – F1.19<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Digital Logic Design (ECE111)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S4_L1<br>
+                            📍 B26 – G.20<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div></div></div><div class="assistant-card" data-assistant="AP15"><div class="assistant-header">Eng. Rana Mohamed</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div><div class="empty">Free</div></div><div class="day-card"><div class="day-header">Monday</div>
+                        <div class="assignment tutorial">
+                          <span class="course-title">New Trends in Data Science (AID427)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S3_AID_L4<br>
+                            📍 B10 – F1.11<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">New Trends in Data Science (AID427)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S4_AID_L4<br>
+                            📍 B10 – F1.08<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Tuesday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">New Trends in Data Science (AID427)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S1_AID_L4<br>
+                            📍 B7 – F1.01<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">New Trends in Data Science (AID427)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S2_AID_L4<br>
+                            📍 B10 – F1.18<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">New Trends in Data Science (AID427)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S4_AID_L4<br>
+                            📍 B26 – F1.03<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Wednesday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">New Trends in Data Science (AID427)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S2_AID_L4<br>
+                            📍 B26 – G.03<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Thursday</div>
+                        <div class="assignment tutorial">
+                          <span class="course-title">New Trends in Data Science (AID427)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S1_AID_L4<br>
+                            📍 B26 – F1.12<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">New Trends in Data Science (AID427)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S3_AID_L4<br>
+                            📍 B17 – G.04<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div></div></div><div class="assistant-card" data-assistant="AP17"><div class="assistant-header">Eng. Maria Mounir</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">New Trends in AI (AID428)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S4_AID_L4<br>
+                            📍 B8 – F1.10<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">New Trends in AI (AID428)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S3_AID_L4<br>
+                            📍 B18 – G.19<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">New Trends in AI (AID428)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S2_AID_L4<br>
+                            📍 B18 – G.11<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Monday</div>
+                        <div class="assignment tutorial">
+                          <span class="course-title">New Trends in AI (AID428)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S3_AID_L4<br>
+                            📍 B26 – F1.02<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">New Trends in AI (AID428)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S4_AID_L4<br>
+                            📍 B18 – G.12<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Tuesday</div>
+                        <div class="assignment tutorial">
+                          <span class="course-title">New Trends in AI (AID428)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S1_AID_L4<br>
+                            📍 B25 – G.04<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">New Trends in AI (AID428)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S2_AID_L4<br>
+                            📍 B25 – G.16<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Wednesday</div><div class="empty">Free</div></div><div class="day-card"><div class="day-header">Thursday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">New Trends in AI (AID428)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S1_AID_L4<br>
+                            📍 B26 – F1.02<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div></div></div><div class="assistant-card" data-assistant="AP19"><div class="assistant-header">Eng. Bassant Tolba</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div>
+                        <div class="assignment tutorial">
+                          <span class="course-title">Ordinary Differential Equations (ACM215)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S5_L2<br>
+                            📍 B9 – F1.22<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Ordinary Differential Equations (ACM215)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S7_L2<br>
+                            📍 B25 – G.17<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Ordinary Differential Equations (ACM215)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S2_L2<br>
+                            📍 B25 – G.05<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Monday</div>
+                        <div class="assignment tutorial">
+                          <span class="course-title">Ordinary Differential Equations (ACM215)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S3_L2<br>
+                            📍 B17 – F1.09<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Ordinary Differential Equations (ACM215)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S8_L2<br>
+                            📍 B10 – F1.18<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Ordinary Differential Equations (ACM215)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S4_L2<br>
+                            📍 B10 – F1.07<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Tuesday</div><div class="empty">Free</div></div><div class="day-card"><div class="day-header">Wednesday</div>
+                        <div class="assignment tutorial">
+                          <span class="course-title">Ordinary Differential Equations (ACM215)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S1_L2<br>
+                            📍 B8 – F1.11<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Ordinary Differential Equations (ACM215)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S6_L2<br>
+                            📍 B9 – F1.04<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Thursday</div>
+                        <div class="assignment tutorial">
+                          <span class="course-title">Ordinary Differential Equations (ACM215)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S9_L2<br>
+                            📍 B25 – G.04<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div></div></div><div class="assistant-card" data-assistant="AP20"><div class="assistant-header">Eng.Sara Tarek</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div>
+                        <div class="assignment tutorial">
+                          <span class="course-title">Physics 1 (PHY113)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S10_L1<br>
+                            📍 B17 – G.21<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Physics 1 (PHY113)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S9_L1<br>
+                            📍 B17 – G.04<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Physics 1 (PHY113)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S9_L1<br>
+                            📍 B25 – G.02<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Physics 1 (PHY113)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S11_L1<br>
+                            📍 B9 – F1.04<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Monday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Physics 1 (PHY113)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S6_L1<br>
+                            📍 B25 – G.16<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Digital Logic Design (ECE111)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S9_L1<br>
+                            📍 B26 – F1.12<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Digital Logic Design (ECE111)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S8_L1<br>
+                            📍 B17 – F1.17<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Digital Logic Design (ECE111)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S8_L1<br>
+                            📍 B25 – F1.14<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Tuesday</div>
+                        <div class="assignment tutorial">
+                          <span class="course-title">Digital Logic Design (ECE111)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S7_L1<br>
+                            📍 B25 – G.02<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Digital Logic Design (ECE111)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S6_L1<br>
+                            📍 B26 – G.20<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Physics 1 (PHY113)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S6_L1<br>
+                            📍 B17 – F1.09<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Digital Logic Design (ECE111)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S9_L1<br>
+                            📍 B17 – G.21<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Wednesday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Digital Logic Design (ECE111)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S5_L1<br>
+                            📍 B17 – G.21<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Physics 1 (PHY113)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S10_L1<br>
+                            📍 B17 – G.21<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Physics 1 (PHY113)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S8_L1<br>
+                            📍 B7 – F1.20<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Digital Logic Design (ECE111)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S10_L1<br>
+                            📍 B25 – G.04<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Thursday</div>
+                        <div class="assignment tutorial">
+                          <span class="course-title">Physics 1 (PHY113)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S8_L1<br>
+                            📍 B7 – F1.21<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Digital Logic Design (ECE111)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S6_L1<br>
+                            📍 B17 – G.19<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Digital Logic Design (ECE111)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S7_L1<br>
+                            📍 B10 – F1.08<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Physics 1 (PHY113)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S7_L1<br>
+                            📍 B17 – G.12<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div></div></div><div class="assistant-card" data-assistant="AP21"><div class="assistant-header">Eng.Ahmed Mohamed</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Physics 1 (PHY113)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S11_L1<br>
+                            📍 B26 – G.13<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Digital Logic Design (ECE111)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S10_L1<br>
+                            📍 B7 – F1.01<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Digital Logic Design (ECE111)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S11_L1<br>
+                            📍 B17 – F1.14<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Digital Logic Design (ECE111)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S12_L1<br>
+                            📍 B25 – G.04<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Monday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Digital Logic Design (ECE111)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S11_L1<br>
+                            📍 B26 – G.06<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Tuesday</div>
+                        <div class="assignment tutorial">
+                          <span class="course-title">Digital Logic Design (ECE111)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S12_L1<br>
+                            📍 B9 – F1.13<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Physics 1 (PHY113)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S12_L1<br>
+                            📍 B25 – F1.10<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Wednesday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Physics 1 (PHY113)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S12_L1<br>
+                            📍 B17 – G.08<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Thursday</div><div class="empty">Free</div></div></div></div><div class="assistant-card" data-assistant="AP22"><div class="assistant-header">Eng.Mariem Nagy</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Data Security (AID413)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S1_AID_L4<br>
+                            📍 B7 – F1.21<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Monday</div><div class="empty">Free</div></div><div class="day-card"><div class="day-header">Tuesday</div>
+                        <div class="assignment tutorial">
+                          <span class="course-title">Data Security (AID413)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S2_AID_L4<br>
+                            📍 B10 – F1.07<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Wednesday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Data Security (AID413)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S3_AID_L4<br>
+                            📍 B26 – G.04<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Data Security (AID413)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S4_AID_L4<br>
+                            📍 B17 – F1.14<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Data Security (AID413)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S1_AID_L4<br>
+                            📍 B26 – F1.12<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Thursday</div>
+                        <div class="assignment tutorial">
+                          <span class="course-title">Data Security (AID413)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S3_AID_L4<br>
+                            📍 B18 – G.04<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Data Security (AID413)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S2_AID_L4<br>
+                            📍 B7 – F1.24<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Data Security (AID413)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S4_AID_L4<br>
+                            📍 B17 – F1.13<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div></div></div><div class="assistant-card" data-assistant="AP23"><div class="assistant-header">Eng.Sara Ahmed</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Human Biology (BIF311)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S1_BIF_L3<br>
+                            📍 B18 – G.20<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Monday</div><div class="empty">Free</div></div><div class="day-card"><div class="day-header">Tuesday</div>
+                        <div class="assignment tutorial">
+                          <span class="course-title">Human Biology (BIF311)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S1_BIF_L3<br>
+                            📍 B26 – F1.02<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Wednesday</div>
+                        <div class="assignment tutorial">
+                          <span class="course-title">Structural Bioinformatics (BIF411)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S1_BIF_L4<br>
+                            📍 B7 – F1.24<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Thursday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Structural Bioinformatics (BIF411)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S1_BIF_L4<br>
+                            📍 B26 – G.03<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Algorithms in Bioinformatics (BIF413)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S1_BIF_L4<br>
+                            📍 B17 – G.07<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div></div></div><div class="assistant-card" data-assistant="AP24"><div class="assistant-header">Eng.Mohamed ElSayed</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div><div class="empty">Free</div></div><div class="day-card"><div class="day-header">Monday</div><div class="empty">Free</div></div><div class="day-card"><div class="day-header">Tuesday</div>
+                        <div class="assignment tutorial">
+                          <span class="course-title">Management and Design of Health Care Systems (BIF412)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S1_BIF_L4<br>
+                            📍 B8 – F1.10<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Wednesday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Management and Design of Health Care Systems (BIF412)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S1_BIF_L4<br>
+                            📍 B25 – G.02<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Thursday</div>
+                        <div class="assignment tutorial">
+                          <span class="course-title">Software Verification and Validation (V&V) (CSC411)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S1_CSC_L4<br>
+                            📍 B7 – F1.21<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Software Verification and Validation (V&V) (CSC411)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S1_CSC_L4<br>
+                            📍 B8 – F1.25<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div></div></div><div class="assistant-card" data-assistant="AP25"><div class="assistant-header">Eng. Nouran Moussa</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">IT Infrastructure (BIF424)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S1_BIF_L4<br>
+                            📍 B10 – F1.06<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Game Design & Development (CSC414)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S1_CSC_L4<br>
+                            📍 B10 – F1.07<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">New Trends in Computer Science (CSC415)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S1_CSC_L4<br>
+                            📍 B26 – F1.03<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Monday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">New Trends in Computer Science (CSC415)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S1_CSC_L4<br>
+                            📍 B26 – F1.04<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Game Design & Development (CSC414)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S1_CSC_L4<br>
+                            📍 B26 – G.20<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Network Design and Management (CNC415)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S3_CNC_L4<br>
+                            📍 B25 – F1.10<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Tuesday</div>
+                        <div class="assignment tutorial">
+                          <span class="course-title">IT Infrastructure (BIF424)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S1_BIF_L4<br>
+                            📍 B18 – G.07<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Network Design and Management (CNC415)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S1_CNC_L4<br>
+                            📍 B7 – F1.02<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Wednesday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Network Design and Management (CNC415)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S2_CNC_L4<br>
+                            📍 B10 – F1.18<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Thursday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Network Design and Management (CNC415)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S4_CNC_L4<br>
+                            📍 B10 – F1.06<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div></div></div><div class="assistant-card" data-assistant="AP26"><div class="assistant-header">Eng. Aya Tarek</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">IT Security and Risk Management (CNC419)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S1_CNC_L4<br>
+                            📍 B17 – F1.14<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Software Security (CNC418)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S3_CNC_L4<br>
+                            📍 B25 – F1.14<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">IT Security and Risk Management (CNC419)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S3_CNC_L4<br>
+                            📍 B26 – G.03<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Monday</div>
+                        <div class="assignment tutorial">
+                          <span class="course-title">IT Security and Risk Management (CNC419)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S2_CNC_L4<br>
+                            📍 B26 – F1.04<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">IT Security and Risk Management (CNC419)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S4_CNC_L4<br>
+                            📍 B25 – G.16<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Software Security (CNC418)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S2_CNC_L4<br>
+                            📍 B8 – F1.06<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Software Security (CNC418)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S4_CNC_L4<br>
+                            📍 B17 – F1.17<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Tuesday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Software Security (CNC418)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S4_CNC_L4<br>
+                            📍 B17 – F1.13<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Software Security (CSC412)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S1_CSC_L4<br>
+                            📍 B10 – F1.11<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">IT Security and Risk Management (CNC419)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S3_CNC_L4<br>
+                            📍 B26 – G.06<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Software Security (CSC412)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S1_CSC_L4<br>
+                            📍 B7 – F1.01<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Wednesday</div>
+                        <div class="assignment tutorial">
+                          <span class="course-title">Software Security (CNC418)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S1_CNC_L4<br>
+                            📍 B7 – F1.02<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Software Security (CNC418)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S3_CNC_L4<br>
+                            📍 B17 – G.12<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">IT Security and Risk Management (CNC419)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S1_CNC_L4<br>
+                            📍 B18 – G.12<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Thursday</div>
+                        <div class="assignment tutorial">
+                          <span class="course-title">Software Security (CNC418)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S2_CNC_L4<br>
+                            📍 B17 – G.19<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">IT Security and Risk Management (CNC419)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S4_CNC_L4<br>
+                            📍 B25 – F1.13<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">IT Security and Risk Management (CNC419)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S2_CNC_L4<br>
+                            📍 B7 – F1.21<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Software Security (CNC418)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S1_CNC_L4<br>
+                            📍 B17 – F1.17<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div></div></div><div class="assistant-card" data-assistant="AP28"><div class="assistant-header">Eng. Zeina Shreif</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div>
+                        <div class="assignment tutorial">
+                          <span class="course-title">Software Modeling and Analysis (CSC314)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S1_CSC_L3<br>
+                            📍 B26 – F1.04<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Monday</div><div class="empty">Free</div></div><div class="day-card"><div class="day-header">Tuesday</div>
+                        <div class="assignment tutorial">
+                          <span class="course-title">Software Quality (CSC410)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S1_CSC_L4<br>
+                            📍 B8 – F1.11<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Wednesday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Software Modeling and Analysis (CSC314)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S1_CSC_L3<br>
+                            📍 B18 – G.11<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Software Quality (CSC410)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S1_CSC_L4<br>
+                            📍 B25 – G.04<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Thursday</div><div class="empty">Free</div></div></div></div><div class="assistant-card" data-assistant="AP29"><div class="assistant-header">Eng.Omar Hamed</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div><div class="empty">Free</div></div><div class="day-card"><div class="day-header">Monday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Digital Signal Processing (ECE324)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S2_AID_L3<br>
+                            📍 B18 – G.20<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Tuesday</div><div class="empty">Free</div></div><div class="day-card"><div class="day-header">Wednesday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Digital Signal Processing (ECE324)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S4_AID_L3<br>
+                            📍 B7 – F1.22<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Digital Signal Processing (ECE324)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S3_AID_L3<br>
+                            📍 B17 – F1.17<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Thursday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Digital Signal Processing (ECE324)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S1_AID_L3<br>
+                            📍 B17 – G.20<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div></div></div><div class="assistant-card" data-assistant="AP30"><div class="assistant-header">Eng.Omar El Faramawy</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div>
+                        <div class="assignment tutorial">
+                          <span class="course-title">Probability and Statistics (MTH212)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S6_L2<br>
+                            📍 B26 – G.03<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Probability and Statistics (MTH212)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S3_L2<br>
+                            📍 B25 – G.04<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Mathematics (1) ( Calculus + Linear Algebra) (MTH111)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S6_L1<br>
+                            📍 B10 – F1.07<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Mathematics (1) ( Calculus + Linear Algebra) (MTH111)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S7_L1<br>
+                            📍 B26 – G.20<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Monday</div>
+                        <div class="assignment tutorial">
+                          <span class="course-title">Probability and Statistics (MTH212)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S8_L2<br>
+                            📍 B26 – G.20<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Mathematics (1) ( Calculus + Linear Algebra) (MTH111)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S2_L1<br>
+                            📍 B7 – F1.22<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Probability and Statistics (MTH212)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S4_L2<br>
+                            📍 B17 – F1.08<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Probability and Statistics (MTH212)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S5_L2<br>
+                            📍 B18 – G.19<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Tuesday</div>
+                        <div class="assignment tutorial">
+                          <span class="course-title">Probability and Statistics (MTH212)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S2_L2<br>
+                            📍 B10 – F1.06<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Mathematics (1) ( Calculus + Linear Algebra) (MTH111)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S4_L1<br>
+                            📍 B25 – F1.14<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Probability and Statistics (MTH212)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S1_L2<br>
+                            📍 B17 – G.19<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Mathematics (1) ( Calculus + Linear Algebra) (MTH111)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S11_L1<br>
+                            📍 B25 – G.04<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Wednesday</div>
+                        <div class="assignment tutorial">
+                          <span class="course-title">Mathematics (1) ( Calculus + Linear Algebra) (MTH111)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S8_L1<br>
+                            📍 B26 – G.12<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Probability and Statistics (MTH212)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S7_L2<br>
+                            📍 B17 – F1.17<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Mathematics (1) ( Calculus + Linear Algebra) (MTH111)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S10_L1<br>
+                            📍 B18 – G.20<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Mathematics (1) ( Calculus + Linear Algebra) (MTH111)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S3_L1<br>
+                            📍 B17 – F1.18<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Thursday</div>
+                        <div class="assignment tutorial">
+                          <span class="course-title">Mathematics (1) ( Calculus + Linear Algebra) (MTH111)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S12_L1<br>
+                            📍 B18 – G.02<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Mathematics (1) ( Calculus + Linear Algebra) (MTH111)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S9_L1<br>
+                            📍 B18 – G.02<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Mathematics (1) ( Calculus + Linear Algebra) (MTH111)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S5_L1<br>
+                            📍 B9 – F1.22<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Mathematics (1) ( Calculus + Linear Algebra) (MTH111)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S1_L1<br>
+                            📍 B17 – G.02<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div></div></div><div class="assistant-card" data-assistant="AP31"><div class="assistant-header">Eng.Mohamed Fedaa</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div><div class="empty">Free</div></div><div class="day-card"><div class="day-header">Monday</div><div class="empty">Free</div></div><div class="day-card"><div class="day-header">Tuesday</div>
+                        <div class="assignment tutorial">
+                          <span class="course-title">Probability and Statistics (MTH212)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S9_L2<br>
+                            📍 B7 – F1.01<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Wednesday</div><div class="empty">Free</div></div><div class="day-card"><div class="day-header">Thursday</div><div class="empty">Free</div></div></div></div>
+</div>
+<script>
+document.getElementById('assistantFilter').addEventListener('change', function() {
+    const selected = this.value;
+    document.querySelectorAll('.assistant-card').forEach(card => {
+        card.style.display = (selected === 'all' || card.dataset.assistant === selected) ? 'block' : 'none';
+    });
+});
+</script>
+</body></html>
