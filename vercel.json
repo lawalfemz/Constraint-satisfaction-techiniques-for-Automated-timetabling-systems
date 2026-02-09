@@ -1,0 +1,4 @@
+{
+  "buildCommand": "mkdir -p public && cp -r templates/* public/ && cp -r static/* public/",
+  "outputDirectory": "public"
+}
