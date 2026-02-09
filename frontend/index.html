@@ -156,6 +156,7 @@ select {
     <img src="OIP.webp" alt="Caleb University logo" class="logo">
     <h1>🎓 Caleb University CSIT Timetable</h1>
     <p>Generated on January 26, 2026 at 04:21 PM</p>
+    <p id="backendStatus" style="margin-top:8px;font-weight:700;color:#fff;background:rgba(0,0,0,0.08);display:inline-block;padding:6px 10px;border-radius:8px;"></p>
   </div>
   <div class="nav-bar">
     <a href="index.html" class="active">Timetable</a>
@@ -163,6 +164,7 @@ select {
     <a href="professors.html">Professors</a>
     <a href="rooms.html">Rooms</a>
   </div>
+  <script src="config.js"></script>
   <div class="filters">
     <select id="levelFilter">
       <option value="all">All Levels</option>
@@ -316,7 +318,36 @@ select {
                         </div></div></div></div></div>
 </div>
 
+document.getElementById('levelFilter').addEventListener('change', filterTimetable);
 <script>
+function setBackendStatus(text, ok){
+  var el = document.getElementById('backendStatus');
+  if(!el) return;
+  el.textContent = text;
+  el.style.background = ok ? 'linear-gradient(90deg,#16a34a,#059669)' : 'linear-gradient(90deg,#ef4444,#f97316)';
+}
+
+window.addEventListener('load', function(){
+  setTimeout(function(){
+    var base = window.API_BASE || '';
+    if(!base){
+      setBackendStatus('Backend: API_BASE not set', false);
+      console.warn('Set window.API_BASE in frontend/config.js to your Render backend URL');
+      return;
+    }
+    fetch(base + '/api/ping').then(function(r){
+      if(!r.ok) throw new Error('status ' + r.status);
+      return r.json();
+    }).then(function(json){
+      setBackendStatus('Backend: connected', true);
+      console.log('Backend ping response:', json);
+    }).catch(function(err){
+      setBackendStatus('Backend: unreachable', false);
+      console.error('Backend ping failed:', err);
+    });
+  }, 250);
+});
+
 document.getElementById('levelFilter').addEventListener('change', filterTimetable);
 document.getElementById('specializationFilter').addEventListener('change', filterTimetable);
 document.getElementById('sectionFilter').addEventListener('change', filterTimetable);
