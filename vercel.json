@@ -1,4 +1,6 @@
 {
-  "buildCommand": "mkdir -p public && cp -r templates/* public/ && cp -r static/* public/",
-  "outputDirectory": "public"
+  "buildCommand": "mkdir -p public && cp templates/*.html public/ && cp -r static/* public/ 2>/dev/null || true",
+  "outputDirectory": "public",
+  "framework": "other",
+  "installCommand": ""
 }
