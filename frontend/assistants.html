@@ -28,6 +28,12 @@ body {
     display: block;
     margin: 0 auto 12px;
   }
+<nav class="nav-bar">
+  <a href="index.html">Timetable</a>
+  <a href="assistants.html" class="active">Assistants</a>
+  <a href="professors.html">Professors</a>
+  <a href="rooms.html">Rooms</a>
+</nav>
 .filters select {
   padding: 8px 12px;
   border: 1px solid #cbd5e1;
@@ -36,6 +42,31 @@ body {
   font-size: 0.95em;
   width: 300px;
   margin-bottom: 20px;
+}
+.nav-bar {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.nav-bar a {
+  padding: 10px 20px;
+  background: #0f4c75;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid #0f4c75;
+}
+.nav-bar a:hover {
+  background: #3282b8;
+  border-color: #3282b8;
+}
+.nav-bar a.active {
+  background: #0ea5e9;
+  border-color: #0ea5e9;
 }
 .assistant-card {
   background: white;
@@ -111,6 +142,12 @@ body {
     <img src="OIP.webp" alt="Caleb University logo" class="logo">
     <h1>👩‍🏫 Caleb University Assistant Professors Timetable</h1>
     <p>Generated on January 26, 2026 at 04:21 PM</p>
+  </div>
+  <div class="nav-bar">
+    <a href="index.html">Timetable</a>
+    <a href="assistants.html" class="active">Assistants</a>
+    <a href="professors.html">Professors</a>
+    <a href="rooms.html">Rooms</a>
   </div>
   <div class="filters">
     <select id="assistantFilter">

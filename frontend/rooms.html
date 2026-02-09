@@ -108,6 +108,32 @@ select {
   color: #166534;
   font-weight: 500;
 }
+}
+.nav-bar {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.nav-bar a {
+  padding: 10px 20px;
+  background: #0f4c75;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid #0f4c75;
+}
+.nav-bar a:hover {
+  background: #3282b8;
+  border-color: #3282b8;
+}
+.nav-bar a.active {
+  background: #ec4899;
+  border-color: #ec4899;
+}
 </style>
 </head>
 <body>
@@ -116,6 +142,12 @@ select {
     <img src="OIP.webp" alt="Caleb University logo" class="logo">
     <h1>🏢 Caleb University Rooms Timetable</h1>
     <p>Generated on January 26, 2026 at 04:21 PM</p>
+  </div>
+  <div class="nav-bar">
+    <a href="index.html">Timetable</a>
+    <a href="assistants.html">Assistants</a>
+    <a href="professors.html">Professors</a>
+    <a href="rooms.html" class="active">Rooms</a>
   </div>
   <div class="filters">
     <select id="buildingFilter">
