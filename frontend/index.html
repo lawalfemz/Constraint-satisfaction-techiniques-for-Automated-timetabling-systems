@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Caleb University CSIT Timetable — 2026-01-26</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f8fafc;
+  color: #1e293b;
+  padding: 20px;
+}
+.container { max-width: 1400px; margin: 0 auto; }
+.header {
+  background: linear-gradient(135deg, #0f4c75, #3282b8);
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(15, 76, 117, 0.3);
+  margin-bottom: 20px;
+}
+  .header .logo {
+    width: 96px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto 12px;
+  }
+.filters {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+select {
+  padding: 8px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: white;
+  font-size: 0.95em;
+}
+.level-card {
+  background: white;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+.level-header {
+  background: linear-gradient(135deg, #00bfa5, #009688);
+  color: white;
+  padding: 16px 24px;
+  font-size: 1.4em;
+  font-weight: 700;
+}
+.section-card {
+  margin: 15px;
+  background: #f1f5f9;
+  border-radius: 12px;
+  overflow: hidden;
+  display: none;
+}
+.section-header {
+  background: #334155;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.days-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  padding: 20px;
+}
+.day-card {
+  background: white;
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+.day-header {
+  font-weight: 700;
+  font-size: 1.15em;
+  color: #0f4c75;
+  margin-bottom: 10px;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #cbd5e1;
+}
+.assignment {
+  background: #dbeafe;
+  border-left: 4px solid #3b82f6;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+}
+.assignment.tutorial {
+  background: #ffecb3;
+  border-left: 4px solid #ffa000;
+}
+.assignment.lab {
+  background: #dcfce7;
+  border-left: 4px solid #22c55e;
+}
+.course-title {
+  font-weight: 700;
+  color: #1e3a8a;
+  display: block;
+  margin-bottom: 4px;
+}
+.details {
+  color: #475569;
+  font-size: 0.85em;
+  line-height: 1.4;
+}
+.empty {
+  color: #94a3b8;
+  font-style: italic;
+  text-align: center;
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <img src="OIP.webp" alt="Caleb University logo" class="logo">
+    <h1>🎓 Caleb University CSIT Timetable</h1>
+    <p>Generated on January 26, 2026 at 04:21 PM</p>
+  </div>
+  <div class="filters">
+    <select id="levelFilter">
+      <option value="all">All Levels</option>
+      <option value="L1">Level 100</option>
+      <option value="L2">Level 200</option>
+      <option value="L3">Level 300</option>
+      <option value="L4">Level 400</option>
+    </select>
+    <select id="specializationFilter">
+      <option value="all">All Specializations</option>
+      <option value="Common">Common</option>
+      <option value="AID">AI & Data Science</option>
+      <option value="CNC">Cybersecurity</option>
+      <option value="CSC">Computer Science</option>
+      <option value="BIF">Bioinformatics</option>
+    </select>
+    <select id="sectionFilter">
+      <option value="all">All Sections</option>
+    </select>
+  </div>
+<div class="level-card" data-level="L1"><div class="level-header">100 Level</div><div class="section-card" data-section="S1_L1" data-specialization="Common"><div class="section-header">Section 1 — Common</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div>
+                        <div class="assignment lecture">
+                          <span class="course-title">Japanese Language (1) (LRA401)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👨‍🏫 Dr. Kenji Tanaka<br>
+                            📍 B26 – F1.08<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lecture">
+                          <span class="course-title">Music and Technology (LRA104)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👨‍🏫 Prof. Adel Al-senn<br>
+                            📍 B25 – G.13<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Fundamentals of Programming (CSC111)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👨‍🏫 Eng. Mariam Ismael<br>
+                            📍 B7 – F1.21<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Monday</div>
+                        <div class="assignment lecture">
+                          <span class="course-title">Digital Logic Design (ECE111)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👨‍🏫 Prof. Ahmed Allam<br>
+                            📍 B18 – G.18<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lecture">
+                          <span class="course-title">Mathematics (1) ( Calculus + Linear Algebra) (MTH111)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👨‍🏫 Dr. Ayman Arafa<br>
+                            📍 B8 – Theater<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Tuesday</div>
+                        <div class="assignment lecture">
+                          <span class="course-title">Japanese Culture (LRA101)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👨‍🏫 Dr. Sherine Elmotasem<br>
+                            📍 B26 – G.21<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lecture">
+                          <span class="course-title">Physics 1 (PHY113)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👨‍🏫 Dr. Adel Fathy<br>
+                            📍 B26 – G.14<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Wednesday</div>
+                        <div class="assignment lab">
+                          <span class="course-title">Physics 1 (PHY113)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👨‍🏫 Eng. Laila Ibrahim<br>
+                            📍 B18 – G.20<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Physics 1 (PHY113)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👨‍🏫 Eng. Laila Ibrahim<br>
+                            📍 B17 – F1.13<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lecture">
+                          <span class="course-title">Fundamentals of Programming (CSC111)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👨‍🏫 Dr. Reda Elbasiony<br>
+                            📍 B10 – Theater<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Thursday</div>
+                        <div class="assignment tutorial">
+                          <span class="course-title">Digital Logic Design (ECE111)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👨‍🏫 Eng. Laila Ibrahim<br>
+                            📍 B7 – F1.22<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        
+                        <div class="assignment lab">
+                          <span class="course-title">Digital Logic Design (ECE111)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👨‍🏫 Eng. Laila Ibrahim<br>
+                            📍 B26 – F1.19<br>
+                            📘 Lab
+                          </span>
+                        </div>
+                        
+                        <div class="assignment tutorial">
+                          <span class="course-title">Mathematics (1) ( Calculus + Linear Algebra) (MTH111)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👨‍🏫 Eng.Omar El Faramawy<br>
+                            📍 B17 – G.02<br>
+                            📘 Tutorial
+                          </span>
+                        </div>
+                        </div></div></div></div></div>
+</div>
+
+<script>
+document.getElementById('levelFilter').addEventListener('change', filterTimetable);
+document.getElementById('specializationFilter').addEventListener('change', filterTimetable);
+document.getElementById('sectionFilter').addEventListener('change', filterTimetable);
+
+function filterTimetable() {
+  const levelFilter = document.getElementById('levelFilter').value;
+  const specializationFilter = document.getElementById('specializationFilter').value;
+  const sectionFilter = document.getElementById('sectionFilter').value;
+
+  const levelCards = document.querySelectorAll('.level-card');
+  const allSections = new Set();
+
+  levelCards.forEach(levelCard => {
+    const level = levelCard.dataset.level;
+    let show = true;
+
+    if (levelFilter !== 'all' && level !== levelFilter) {
+      show = false;
+    }
+
+    const sectionCards = levelCard.querySelectorAll('.section-card');
+    let levelHasVisibleSections = false;
+
+    sectionCards.forEach(sectionCard => {
+      const specialization = sectionCard.dataset.specialization;
+      const section = sectionCard.dataset.section;
+      allSections.add(section);
+
+      let sectionShow = true;
+      if (show) {
+        if (specializationFilter !== 'all' && specialization !== specializationFilter) {
+          sectionShow = false;
+        }
+        if (sectionFilter !== 'all' && section !== sectionFilter) {
+          sectionShow = false;
+        }
+      }
+
+      sectionCard.style.display = sectionShow ? 'block' : 'none';
+      if (sectionShow) levelHasVisibleSections = true;
+    });
+
+    levelCard.style.display = show && levelHasVisibleSections ? 'block' : 'none';
+  });
+
+  // Update section filter
+  const sectionFilterSelect = document.getElementById('sectionFilter');
+  const selectedSection = sectionFilterSelect.value;
+  sectionFilterSelect.innerHTML = '<option value="all">All Sections</option>';
+  
+  const sortedSections = Array.from(allSections).sort();
+  sortedSections.forEach(section => {
+    const option = document.createElement('option');
+    option.value = section;
+    option.textContent = section;
+    sectionFilterSelect.appendChild(option);
+  });
+
+  sectionFilterSelect.value = selectedSection;
+}
+
+// Initialize and show first section
+window.addEventListener('load', () => {
+  const firstSection = document.querySelector('.section-card');
+  if (firstSection) {
+    firstSection.style.display = 'block';
+  }
+  filterTimetable();
+});
+</script>
+</body>
+</html>
