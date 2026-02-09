@@ -1,0 +1,2535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Caleb University Professors Timetable</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f8fafc;
+  color: #1e293b;
+  padding: 20px;
+}
+.container { max-width: 1400px; margin: 0 auto; }
+.header {
+  background: linear-gradient(135deg, #0f4c75, #3282b8);
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+  .header .logo {
+    width: 96px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto 12px;
+  }
+.filters select {
+  padding: 8px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: white;
+  font-size: 0.95em;
+  width: 300px;
+  margin-bottom: 20px;
+}
+.prof-card {
+  background: white;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  overflow: hidden;
+  display: none;
+}
+.prof-header {
+  background: #4f46e5;
+  color: white;
+  padding: 16px 24px;
+  font-size: 1.4em;
+  font-weight: 700;
+}
+.days-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  padding: 20px;
+}
+.day-card {
+  background: white;
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+.day-header {
+  font-weight: 700;
+  font-size: 1.15em;
+  color: #0f4c75;
+  margin-bottom: 10px;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #cbd5e1;
+}
+.assignment {
+  background: #dbeafe;
+  border-left: 4px solid #3b82f6;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+}
+.course-title {
+  font-weight: 700;
+  color: #1e3a8a;
+  display: block;
+  margin-bottom: 4px;
+}
+.details {
+  color: #475569;
+  font-size: 0.85em;
+  line-height: 1.4;
+}
+.empty {
+  color: #94a3b8;
+  font-style: italic;
+  text-align: center;
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <img src="OIP.webp" alt="Caleb University logo" class="logo">
+    <h1>👨‍🏫 Caleb University Professors Timetable</h1>
+    <p>Generated on January 26, 2026 at 04:21 PM</p>
+  </div>
+  <div class="filters">
+    <select id="profFilter">
+      <option value="all">Select Professor</option>
+<option value="PROF03">Dr. Adel Fathy</option><option value="PROF10">Dr. Ahmed Abdel-Malk</option><option value="PROF08">Dr. Ahmed Anter</option><option value="PROF07">Dr. Ahmed Arafa</option><option value="PROF11">Dr. Ahmed Bayumi</option><option value="PROF22">Dr. Ali Kandil</option><option value="PROF32">Dr. Amal Gomaa</option><option value="PROF02">Dr. Ayman Arafa</option><option value="PROF35">Dr. Haruto Ito</option><option value="PROF12">Dr. Hataba</option><option value="PROF20">Dr. Karim Hamed</option><option value="PROF33">Dr. Kenji Tanaka</option><option value="PROF30">Dr. Maali Fouad</option><option value="PROF17">Dr. Mohamed Akhames</option><option value="PROF28">Dr. Mohamed El-khateeb</option><option value="PROF15">Dr. Mohamed Issa</option><option value="PROF25">Dr. Mostafa Mohamed</option><option value="PROF21">Dr. Moustafa Mahmoud</option><option value="PROF16">Dr. Mustafa AlSayed</option><option value="PROF19">Dr. Nadia Fawzy</option><option value="PROF01">Dr. Reda Elbasiony</option><option value="PROF06">Dr. Sameh Sherif</option><option value="PROF04">Dr. Sherine Elmotasem</option><option value="PROF26">Dr. Yassen</option><option value="PROF34">Dr. Yumi Yamamoto</option><option value="PROF37">Dr.Ahmed El Said</option><option value="PROF38">Dr.Yuki</option><option value="PROF23">Mohamad Ayad</option><option value="PROF27">Prof. Adel Al-senn</option><option value="PROF05">Prof. Ahmed Allam</option><option value="PROF36">Prof. Eman Allam</option><option value="PROF18">Prof. Marghany Hassan</option><option value="PROF31">Prof. Mohamed Hassan</option><option value="PROF09">Prof. Mostafa Soliman</option><option value="PROF29">Prof. Said Sadik</option><option value="PROF14">Prof. Samir Ahmed</option><option value="PROF24">Prof. gehad G. Mohamed</option><option value="PROF00">prof. Mohamed Ramy</option>
+    </select>
+  </div>
+<div class="prof-card" data-prof="PROF01"><div class="prof-header">Dr. Reda Elbasiony</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div>
+                        <div class="assignment">
+                          <span class="course-title">Fundamentals of Programming (CSC111)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S12_L1<br>
+                            📍 B18 – G.21<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Foundations of Information Systems (CNC312)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S1_CNC_L3<br>
+                            📍 B8 – Theater<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Foundations of Information Systems (CNC312)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S2_CNC_L3<br>
+                            📍 Hall – Green<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Monday</div>
+                        <div class="assignment">
+                          <span class="course-title">Fundamentals of Programming (CSC111)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S8_L1<br>
+                            📍 Hall – Red<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Foundations of Information Systems (CNC312)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S3_CNC_L3<br>
+                            📍 B17 – F1.03<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Tuesday</div>
+                        <div class="assignment">
+                          <span class="course-title">Fundamentals of Programming (CSC111)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S4_L1<br>
+                            📍 B26 – G.14<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Fundamentals of Programming (CSC111)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S9_L1<br>
+                            📍 B10 – Theater<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Foundations of Information Systems (CNC312)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S4_CNC_L3<br>
+                            📍 Hall – Green<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Fundamentals of Programming (CSC111)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S6_L1<br>
+                            📍 B7 – G.01<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Wednesday</div>
+                        <div class="assignment">
+                          <span class="course-title">Fundamentals of Programming (CSC111)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S10_L1<br>
+                            📍 B18 – G.09<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Fundamentals of Programming (CSC111)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S5_L1<br>
+                            📍 B18 – G.18<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Fundamentals of Programming (CSC111)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S1_L1<br>
+                            📍 B10 – Theater<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Thursday</div>
+                        <div class="assignment">
+                          <span class="course-title">Fundamentals of Programming (CSC111)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S7_L1<br>
+                            📍 B26 – G.01<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Fundamentals of Programming (CSC111)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S2_L1<br>
+                            📍 B8 – G.41<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Fundamentals of Programming (CSC111)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S11_L1<br>
+                            📍 B10 – Theater<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Fundamentals of Programming (CSC111)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S3_L1<br>
+                            📍 B18 – Theater<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div></div></div><div class="prof-card" data-prof="PROF02"><div class="prof-header">Dr. Ayman Arafa</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div>
+                        <div class="assignment">
+                          <span class="course-title">Mathematics (1) ( Calculus + Linear Algebra) (MTH111)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S8_L1<br>
+                            📍 B26 – F1.01<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Mathematics (1) ( Calculus + Linear Algebra) (MTH111)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S10_L1<br>
+                            📍 B10 – Theater<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Monday</div>
+                        <div class="assignment">
+                          <span class="course-title">Mathematics (1) ( Calculus + Linear Algebra) (MTH111)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S12_L1<br>
+                            📍 B25 – Theater 1<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Mathematics (1) ( Calculus + Linear Algebra) (MTH111)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S7_L1<br>
+                            📍 B26 – G.11<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Mathematics (1) ( Calculus + Linear Algebra) (MTH111)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S4_L1<br>
+                            📍 B7 – G.01<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Mathematics (1) ( Calculus + Linear Algebra) (MTH111)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S1_L1<br>
+                            📍 B8 – Theater<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Tuesday</div>
+                        <div class="assignment">
+                          <span class="course-title">Mathematics (1) ( Calculus + Linear Algebra) (MTH111)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S5_L1<br>
+                            📍 B25 – Theater2<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Mathematics (1) ( Calculus + Linear Algebra) (MTH111)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S2_L1<br>
+                            📍 B7 – Theater<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Wednesday</div>
+                        <div class="assignment">
+                          <span class="course-title">Mathematics (1) ( Calculus + Linear Algebra) (MTH111)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S6_L1<br>
+                            📍 B26 – Theater<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Mathematics (1) ( Calculus + Linear Algebra) (MTH111)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S11_L1<br>
+                            📍 B26 – F1.13<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Thursday</div>
+                        <div class="assignment">
+                          <span class="course-title">Mathematics (1) ( Calculus + Linear Algebra) (MTH111)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S3_L1<br>
+                            📍 B18 – G.18<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Mathematics (1) ( Calculus + Linear Algebra) (MTH111)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S9_L1<br>
+                            📍 Hall – Blue<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div></div></div><div class="prof-card" data-prof="PROF03"><div class="prof-header">Dr. Adel Fathy</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div>
+                        <div class="assignment">
+                          <span class="course-title">Physics 1 (PHY113)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S7_L1<br>
+                            📍 B18 – G.13<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Physics 1 (PHY113)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S10_L1<br>
+                            📍 B26 – G.01<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Monday</div>
+                        <div class="assignment">
+                          <span class="course-title">Physics 1 (PHY113)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S11_L1<br>
+                            📍 B10 – Theater<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Physics 1 (PHY113)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S5_L1<br>
+                            📍 B25 – Theater 1<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Tuesday</div>
+                        <div class="assignment">
+                          <span class="course-title">Physics 1 (PHY113)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S6_L1<br>
+                            📍 B18 – G.18<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Physics 1 (PHY113)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S1_L1<br>
+                            📍 B26 – G.14<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Physics 1 (PHY113)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S12_L1<br>
+                            📍 B26 – G.01<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Wednesday</div>
+                        <div class="assignment">
+                          <span class="course-title">Physics 1 (PHY113)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S4_L1<br>
+                            📍 B26 – G.02<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Physics 1 (PHY113)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S9_L1<br>
+                            📍 B26 – F1.16<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Physics 1 (PHY113)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S2_L1<br>
+                            📍 B26 – F1.10<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Thursday</div>
+                        <div class="assignment">
+                          <span class="course-title">Physics 1 (PHY113)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S3_L1<br>
+                            📍 B18 – G.21<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Physics 1 (PHY113)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S8_L1<br>
+                            📍 B26 – F1.16<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div></div></div><div class="prof-card" data-prof="PROF04"><div class="prof-header">Dr. Sherine Elmotasem</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div>
+                        <div class="assignment">
+                          <span class="course-title">Japanese Culture (LRA101)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S2_L1<br>
+                            📍 B26 – F1.08<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Japanese Culture (LRA101)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S12_L1<br>
+                            📍 B7 – Theater<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Japanese Culture (LRA101)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S4_L1<br>
+                            📍 B18 – G.08<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Monday</div>
+                        <div class="assignment">
+                          <span class="course-title">Japanese Culture (LRA101)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S5_L1<br>
+                            📍 B18 – G.13<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Japanese Culture (LRA101)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S11_L1<br>
+                            📍 Hall – Blue<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Tuesday</div>
+                        <div class="assignment">
+                          <span class="course-title">Japanese Culture (LRA101)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S1_L1<br>
+                            📍 B26 – G.21<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Japanese Culture (LRA101)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S10_L1<br>
+                            📍 Hall – Yellow<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Wednesday</div>
+                        <div class="assignment">
+                          <span class="course-title">Japanese Culture (LRA101)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S3_L1<br>
+                            📍 B7 – G.01<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Japanese Culture (LRA101)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S6_L1<br>
+                            📍 Hall – Yellow<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Thursday</div>
+                        <div class="assignment">
+                          <span class="course-title">Japanese Culture (LRA101)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S9_L1<br>
+                            📍 B18 – G.13<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Japanese Culture (LRA101)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S7_L1<br>
+                            📍 B9 – Theater<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Japanese Culture (LRA101)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S8_L1<br>
+                            📍 Hall – Red<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div></div></div><div class="prof-card" data-prof="PROF05"><div class="prof-header">Prof. Ahmed Allam</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div>
+                        <div class="assignment">
+                          <span class="course-title">Digital Logic Design (ECE111)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S3_L1<br>
+                            📍 B26 – G.01<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Digital Logic Design (ECE111)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S8_L1<br>
+                            📍 Hall – Red<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Monday</div>
+                        <div class="assignment">
+                          <span class="course-title">Digital Logic Design (ECE111)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S1_L1<br>
+                            📍 B18 – G.18<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Digital Logic Design (ECE111)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S4_L1<br>
+                            📍 B25 – Theater 1<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Tuesday</div>
+                        <div class="assignment">
+                          <span class="course-title">Digital Logic Design (ECE111)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S12_L1<br>
+                            📍 B18 – Theater<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Digital Logic Design (ECE111)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S11_L1<br>
+                            📍 Hall – Red<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Wednesday</div>
+                        <div class="assignment">
+                          <span class="course-title">Digital Logic Design (ECE111)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S2_L1<br>
+                            📍 B26 – F1.10<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Digital Logic Design (ECE111)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S7_L1<br>
+                            📍 B17 – F1.03<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Digital Logic Design (ECE111)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S9_L1<br>
+                            📍 B26 – G.19<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Thursday</div>
+                        <div class="assignment">
+                          <span class="course-title">Digital Logic Design (ECE111)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S5_L1<br>
+                            📍 B7 – G.01<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Digital Logic Design (ECE111)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S6_L1<br>
+                            📍 B7 – G.01<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Digital Logic Design (ECE111)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S10_L1<br>
+                            📍 B18 – G.21<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div></div></div><div class="prof-card" data-prof="PROF06"><div class="prof-header">Dr. Sameh Sherif</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div><div class="empty">Free</div></div><div class="day-card"><div class="day-header">Monday</div><div class="empty">Free</div></div><div class="day-card"><div class="day-header">Tuesday</div>
+                        <div class="assignment">
+                          <span class="course-title">Structural Bioinformatics (BIF411)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S1_BIF_L4<br>
+                            📍 B26 – G.14<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Wednesday</div><div class="empty">Free</div></div><div class="day-card"><div class="day-header">Thursday</div>
+                        <div class="assignment">
+                          <span class="course-title">Management and Design of Health Care Systems (BIF412)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S1_BIF_L4<br>
+                            📍 B18 – G.13<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div></div></div><div class="prof-card" data-prof="PROF07"><div class="prof-header">Dr. Ahmed Arafa</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div>
+                        <div class="assignment">
+                          <span class="course-title">Data Security (AID413)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S3_AID_L4<br>
+                            📍 B26 – G.14<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Data Security (AID413)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S1_AID_L4<br>
+                            📍 B8 – G.41<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Software Engineering (CSC211)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S5_L2<br>
+                            📍 B26 – G.08<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">New Trends in Data Science (AID427)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S3_AID_L4<br>
+                            📍 Hall – Yellow<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Monday</div>
+                        <div class="assignment">
+                          <span class="course-title">Software Engineering (CSC211)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S2_L2<br>
+                            📍 B26 – G.01<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Fundamentals of Cybersecurity (CNC411)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S3_CNC_L4<br>
+                            📍 Hall – Yellow<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">New Trends in Data Science (AID427)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S1_AID_L4<br>
+                            📍 B18 – G.09<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">New Trends in Data Science (AID427)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S2_AID_L4<br>
+                            📍 B26 – G.02<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Tuesday</div>
+                        <div class="assignment">
+                          <span class="course-title">Fundamentals of Cybersecurity (CNC411)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S1_CNC_L4<br>
+                            📍 B17 – F1.15<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Software Engineering (CSC211)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S7_L2<br>
+                            📍 B9 – Theater<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Fundamentals of Cybersecurity (CNC411)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S2_CNC_L4<br>
+                            📍 B26 – G.02<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Software Engineering (CSC211)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S3_L2<br>
+                            📍 B17 – G.09<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Wednesday</div>
+                        <div class="assignment">
+                          <span class="course-title">Software Engineering (CSC211)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S4_L2<br>
+                            📍 B7 – Theater<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Software Engineering (CSC211)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S9_L2<br>
+                            📍 B26 – G.02<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Data Security (AID413)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S4_AID_L4<br>
+                            📍 B7 – Theater<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Data Security (AID413)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S2_AID_L4<br>
+                            📍 B17 – F1.16<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Thursday</div>
+                        <div class="assignment">
+                          <span class="course-title">Software Engineering (CSC211)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S1_L2<br>
+                            📍 Hall – Blue<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">New Trends in Data Science (AID427)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S4_AID_L4<br>
+                            📍 B26 – F1.08<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Software Engineering (CSC211)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S8_L2<br>
+                            📍 B17 – F1.16<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Software Engineering (CSC211)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S6_L2<br>
+                            📍 B25 – G.13<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div></div></div><div class="prof-card" data-prof="PROF08"><div class="prof-header">Dr. Ahmed Anter</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div>
+                        <div class="assignment">
+                          <span class="course-title">Mathematics of Data Science (AID311)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S1_AID_L3<br>
+                            📍 B26 – G.11<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Monday</div><div class="empty">Free</div></div><div class="day-card"><div class="day-header">Tuesday</div>
+                        <div class="assignment">
+                          <span class="course-title">Mathematics of Data Science (AID311)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S2_AID_L3<br>
+                            📍 B8 – Theater<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Wednesday</div><div class="empty">Free</div></div><div class="day-card"><div class="day-header">Thursday</div>
+                        <div class="assignment">
+                          <span class="course-title">Mathematics of Data Science (AID311)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S3_AID_L3<br>
+                            📍 B26 – G.01<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Mathematics of Data Science (AID311)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S4_AID_L3<br>
+                            📍 B26 – G.11<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div></div></div><div class="prof-card" data-prof="PROF09"><div class="prof-header">Prof. Mostafa Soliman</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div>
+                        <div class="assignment">
+                          <span class="course-title">Computer Organization (CSE214)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S4_L2<br>
+                            📍 B26 – G.08<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Computer Organization (CSE214)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S3_L2<br>
+                            📍 B9 – G.35<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Monday</div>
+                        <div class="assignment">
+                          <span class="course-title">Computer Organization (CSE214)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S5_L2<br>
+                            📍 B26 – G.02<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Computer Organization (CSE214)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S9_L2<br>
+                            📍 B26 – F1.08<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Tuesday</div>
+                        <div class="assignment">
+                          <span class="course-title">Computer Organization (CSE214)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S6_L2<br>
+                            📍 B26 – G.19<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Computer Organization (CSE214)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S7_L2<br>
+                            📍 B26 – G.08<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Computer Organization (CSE214)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S1_L2<br>
+                            📍 B25 – Theater 1<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Wednesday</div>
+                        <div class="assignment">
+                          <span class="course-title">Computer Organization (CSE214)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S2_L2<br>
+                            📍 B26 – G.14<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Seminar and Project-Based Learning on CSIT (CSC315)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S1_BIF_L3<br>
+                            📍 B26 – F1.01<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Thursday</div>
+                        <div class="assignment">
+                          <span class="course-title">Computer Organization (CSE214)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S8_L2<br>
+                            📍 B26 – F1.13<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div></div></div><div class="prof-card" data-prof="PROF10"><div class="prof-header">Dr. Ahmed Abdel-Malk</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div>
+                        <div class="assignment">
+                          <span class="course-title">Digital Signal Processing (ECE324)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S2_AID_L3<br>
+                            📍 B26 – F1.10<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Monday</div>
+                        <div class="assignment">
+                          <span class="course-title">Digital Signal Processing (ECE324)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S3_AID_L3<br>
+                            📍 B26 – G.21<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Tuesday</div>
+                        <div class="assignment">
+                          <span class="course-title">Digital Signal Processing (ECE324)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S1_AID_L3<br>
+                            📍 B7 – G.01<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Wednesday</div><div class="empty">Free</div></div><div class="day-card"><div class="day-header">Thursday</div>
+                        <div class="assignment">
+                          <span class="course-title">Digital Signal Processing (ECE324)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S4_AID_L3<br>
+                            📍 B26 – G.02<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div></div></div><div class="prof-card" data-prof="PROF11"><div class="prof-header">Dr. Ahmed Bayumi</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div>
+                        <div class="assignment">
+                          <span class="course-title">Intelligent Systems (AID312)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S3_CNC_L3<br>
+                            📍 Hall – Blue<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Intelligent Systems (AID312)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S1_AID_L3<br>
+                            📍 B26 – F1.08<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Intelligent Systems (AID312)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S3_AID_L3<br>
+                            📍 B26 – G.11<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Monday</div>
+                        <div class="assignment">
+                          <span class="course-title">New Trends in AI (AID428)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S2_AID_L4<br>
+                            📍 B26 – F1.08<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Intelligent Systems (AID312)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S2_AID_L3<br>
+                            📍 B26 – G.01<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">New Trends in AI (AID428)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S3_AID_L4<br>
+                            📍 Hall – Yellow<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">New Trends in AI (AID428)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S1_AID_L4<br>
+                            📍 B26 – F1.10<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Tuesday</div>
+                        <div class="assignment">
+                          <span class="course-title">Intelligent Systems (AID312)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S4_AID_L3<br>
+                            📍 B26 – G.01<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Intelligent Systems (AID312)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S1_CNC_L3<br>
+                            📍 B9 – Theater<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Intelligent Systems (AID312)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S1_CSC_L3<br>
+                            📍 B26 – F1.10<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Wednesday</div>
+                        <div class="assignment">
+                          <span class="course-title">New Trends in AI (AID428)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S4_AID_L4<br>
+                            📍 Hall – Blue<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">New Trends in Computer Science (CSC415)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S1_CSC_L4<br>
+                            📍 B8 – G.41<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Thursday</div>
+                        <div class="assignment">
+                          <span class="course-title">Intelligent Systems (AID312)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S4_CNC_L3<br>
+                            📍 Hall – Yellow<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Intelligent Systems (AID312)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S2_CNC_L3<br>
+                            📍 B26 – G.14<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Intelligent Systems (AID312)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S1_BIF_L3<br>
+                            📍 Hall – Yellow<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div></div></div><div class="prof-card" data-prof="PROF12"><div class="prof-header">Dr. Hataba</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div>
+                        <div class="assignment">
+                          <span class="course-title">Software Security (CNC418)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S3_CNC_L4<br>
+                            📍 B25 – Theater 1<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Software Security (CNC418)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S1_CNC_L4<br>
+                            📍 B25 – Theater 1<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">IT Security and Risk Management (CNC419)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S1_CNC_L4<br>
+                            📍 B9 – Theater<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Software Security (CNC418)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S2_CNC_L4<br>
+                            📍 B25 – Theater 1<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Monday</div>
+                        <div class="assignment">
+                          <span class="course-title">Computer Graphics and Visualization (CSC317)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S3_CNC_L3<br>
+                            📍 B17 – G.09<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Computer Graphics and Visualization (CSC317)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S4_CNC_L3<br>
+                            📍 B26 – G.01<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Tuesday</div>
+                        <div class="assignment">
+                          <span class="course-title">Computer Graphics and Visualization (CSC317)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S2_CNC_L3<br>
+                            📍 B26 – F1.10<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">IT Security and Risk Management (CNC419)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S2_CNC_L4<br>
+                            📍 B25 – G.13<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Wednesday</div>
+                        <div class="assignment">
+                          <span class="course-title">Computer Graphics and Visualization (CSC317)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S1_CNC_L3<br>
+                            📍 B8 – Theater<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">IT Security and Risk Management (CNC419)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S3_CNC_L4<br>
+                            📍 B26 – Theater<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Software Security (CNC418)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S4_CNC_L4<br>
+                            📍 Hall – Green<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Thursday</div>
+                        <div class="assignment">
+                          <span class="course-title">Computer Graphics and Visualization (CSC317)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S1_CSC_L3<br>
+                            📍 B26 – G.08<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">IT Security and Risk Management (CNC419)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S4_CNC_L4<br>
+                            📍 B17 – F1.03<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div></div></div><div class="prof-card" data-prof="PROF14"><div class="prof-header">Prof. Samir Ahmed</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div>
+                        <div class="assignment">
+                          <span class="course-title">Computer Networks (CNC311)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S3_CNC_L3<br>
+                            📍 B9 – Theater<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Monday</div>
+                        <div class="assignment">
+                          <span class="course-title">Computer Networks (CNC311)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S1_CNC_L3<br>
+                            📍 B8 – Theater<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Computer Networks (CNC311)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S2_AID_L3<br>
+                            📍 B17 – G.09<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Tuesday</div>
+                        <div class="assignment">
+                          <span class="course-title">Computer Networks (CNC311)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S1_BIF_L3<br>
+                            📍 B10 – Theater<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Computer Networks (CNC311)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S4_AID_L3<br>
+                            📍 B18 – G.18<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Wednesday</div>
+                        <div class="assignment">
+                          <span class="course-title">Computer Networks (CNC311)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S3_AID_L3<br>
+                            📍 B25 – Theater2<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Computer Networks (CNC311)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S1_AID_L3<br>
+                            📍 B18 – G.08<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Thursday</div>
+                        <div class="assignment">
+                          <span class="course-title">Computer Networks (CNC311)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S1_CSC_L3<br>
+                            📍 B26 – Theater<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Computer Networks (CNC311)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S2_CNC_L3<br>
+                            📍 B8 – Theater<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Computer Networks (CNC311)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S4_CNC_L3<br>
+                            📍 B26 – F1.10<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div></div></div><div class="prof-card" data-prof="PROF15"><div class="prof-header">Dr. Mohamed Issa</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div>
+                        <div class="assignment">
+                          <span class="course-title">Database Systems (CNC314)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S2_AID_L3<br>
+                            📍 B7 – Theater<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Database Systems (CNC314)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S4_CNC_L3<br>
+                            📍 B25 – Theater2<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Monday</div>
+                        <div class="assignment">
+                          <span class="course-title">Database Systems (CNC314)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S3_AID_L3<br>
+                            📍 B8 – G.41<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Database Systems (CNC314)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S1_CSC_L3<br>
+                            📍 B7 – G.01<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Tuesday</div>
+                        <div class="assignment">
+                          <span class="course-title">Advanced Data Mining (AID417)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S3_AID_L4<br>
+                            📍 B26 – G.19<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Advanced Data Mining (AID417)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S4_AID_L4<br>
+                            📍 B26 – F1.01<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Database Systems (CNC314)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S3_CNC_L3<br>
+                            📍 B25 – Theater 1<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Database Systems (CNC314)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S1_AID_L3<br>
+                            📍 B10 – Theater<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Wednesday</div>
+                        <div class="assignment">
+                          <span class="course-title">Database Systems (CNC314)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S1_CNC_L3<br>
+                            📍 B17 – F1.15<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Database Systems (CNC314)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S2_CNC_L3<br>
+                            📍 B26 – G.08<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Database Systems (CNC314)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S4_AID_L3<br>
+                            📍 B25 – Theater2<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Thursday</div>
+                        <div class="assignment">
+                          <span class="course-title">Database Systems (CNC314)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S1_BIF_L3<br>
+                            📍 Hall – Red<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Advanced Data Mining (AID417)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S1_AID_L4<br>
+                            📍 B17 – G.09<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Advanced Data Mining (AID417)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S2_AID_L4<br>
+                            📍 B7 – Theater<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div></div></div><div class="prof-card" data-prof="PROF16"><div class="prof-header">Dr. Mustafa AlSayed</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div>
+                        <div class="assignment">
+                          <span class="course-title">Software Security (CSC412)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S1_CSC_L4<br>
+                            📍 B17 – F1.15<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Monday</div>
+                        <div class="assignment">
+                          <span class="course-title">Software Modeling and Analysis (CSC314)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S1_CSC_L3<br>
+                            📍 B18 – G.13<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Network Design and Management (CNC415)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S2_CNC_L4<br>
+                            📍 B18 – G.08<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Tuesday</div>
+                        <div class="assignment">
+                          <span class="course-title">Network Design and Management (CNC415)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S4_CNC_L4<br>
+                            📍 B26 – G.08<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Wednesday</div>
+                        <div class="assignment">
+                          <span class="course-title">Network Design and Management (CNC415)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S1_CNC_L4<br>
+                            📍 B9 – G.35<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Thursday</div>
+                        <div class="assignment">
+                          <span class="course-title">Game Design & Development (CSC414)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S1_CSC_L4<br>
+                            📍 B26 – G.21<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Network Design and Management (CNC415)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S3_CNC_L4<br>
+                            📍 B7 – Theater<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div></div></div><div class="prof-card" data-prof="PROF17"><div class="prof-header">Dr. Mohamed Akhames</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div><div class="empty">Free</div></div><div class="day-card"><div class="day-header">Monday</div>
+                        <div class="assignment">
+                          <span class="course-title">Software Verification and Validation (V&V) (CSC411)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S1_CSC_L4<br>
+                            📍 B26 – F1.16<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Tuesday</div><div class="empty">Free</div></div><div class="day-card"><div class="day-header">Wednesday</div>
+                        <div class="assignment">
+                          <span class="course-title">IT Infrastructure (BIF424)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S1_BIF_L4<br>
+                            📍 Hall – Red<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Thursday</div>
+                        <div class="assignment">
+                          <span class="course-title">Software Quality (CSC410)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S1_CSC_L4<br>
+                            📍 B26 – Theater<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div></div></div><div class="prof-card" data-prof="PROF18"><div class="prof-header">Prof. Marghany Hassan</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div>
+                        <div class="assignment">
+                          <span class="course-title">BIG Data Analytics & Visualization (AID411)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S2_AID_L4<br>
+                            📍 B26 – G.08<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">BIG Data Analytics & Visualization (AID411)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S4_AID_L4<br>
+                            📍 B17 – F1.15<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Monday</div>
+                        <div class="assignment">
+                          <span class="course-title">Algorithms in Bioinformatics (BIF413)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S1_BIF_L4<br>
+                            📍 B17 – G.09<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Tuesday</div><div class="empty">Free</div></div><div class="day-card"><div class="day-header">Wednesday</div>
+                        <div class="assignment">
+                          <span class="course-title">BIG Data Analytics & Visualization (AID411)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S1_AID_L4<br>
+                            📍 B25 – Theater 1<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">BIG Data Analytics & Visualization (AID411)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S3_AID_L4<br>
+                            📍 B26 – F1.01<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Thursday</div><div class="empty">Free</div></div></div></div><div class="prof-card" data-prof="PROF19"><div class="prof-header">Dr. Nadia Fawzy</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div>
+                        <div class="assignment">
+                          <span class="course-title">Networks and Web Programming (CNC111)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S3_L2<br>
+                            📍 B25 – G.13<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Networks and Web Programming (CNC111)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S8_L2<br>
+                            📍 B18 – Theater<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Networks and Web Programming (CNC111)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S9_L2<br>
+                            📍 B26 – F1.08<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Monday</div>
+                        <div class="assignment">
+                          <span class="course-title">Networks and Web Programming (CNC111)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S7_L2<br>
+                            📍 B9 – Theater<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Networks and Web Programming (CNC111)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S6_L2<br>
+                            📍 B26 – G.19<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Tuesday</div>
+                        <div class="assignment">
+                          <span class="course-title">Networks and Web Programming (CNC111)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S4_L2<br>
+                            📍 B18 – G.18<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Wednesday</div><div class="empty">Free</div></div><div class="day-card"><div class="day-header">Thursday</div>
+                        <div class="assignment">
+                          <span class="course-title">Networks and Web Programming (CNC111)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S2_L2<br>
+                            📍 B8 – Theater<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Networks and Web Programming (CNC111)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S1_L2<br>
+                            📍 B26 – G.11<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Networks and Web Programming (CNC111)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S5_L2<br>
+                            📍 B26 – G.01<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div></div></div><div class="prof-card" data-prof="PROF27"><div class="prof-header">Prof. Adel Al-senn</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div>
+                        <div class="assignment">
+                          <span class="course-title">Music and Technology (LRA104)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S9_L1<br>
+                            📍 B9 – Theater<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Music and Technology (LRA104)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S1_L1<br>
+                            📍 B25 – G.13<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Monday</div>
+                        <div class="assignment">
+                          <span class="course-title">Music and Technology (LRA104)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S3_L1<br>
+                            📍 B26 – F1.01<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Music and Technology (LRA104)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S7_L1<br>
+                            📍 B26 – F1.08<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Tuesday</div>
+                        <div class="assignment">
+                          <span class="course-title">Music and Technology (LRA104)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S11_L1<br>
+                            📍 B25 – G.13<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Music and Technology (LRA104)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S5_L1<br>
+                            📍 B17 – F1.15<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Wednesday</div><div class="empty">Free</div></div><div class="day-card"><div class="day-header">Thursday</div><div class="empty">Free</div></div></div></div><div class="prof-card" data-prof="PROF28"><div class="prof-header">Dr. Mohamed El-khateeb</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div>
+                        <div class="assignment">
+                          <span class="course-title">Theater and Drama (LRA105)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S12_L1<br>
+                            📍 B10 – Theater<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Monday</div>
+                        <div class="assignment">
+                          <span class="course-title">Theater and Drama (LRA105)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S6_L1<br>
+                            📍 B26 – G.21<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Tuesday</div>
+                        <div class="assignment">
+                          <span class="course-title">Theater and Drama (LRA105)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S8_L1<br>
+                            📍 B17 – F1.15<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Wednesday</div>
+                        <div class="assignment">
+                          <span class="course-title">Theater and Drama (LRA105)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S4_L1<br>
+                            📍 B26 – G.01<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Thursday</div>
+                        <div class="assignment">
+                          <span class="course-title">Theater and Drama (LRA105)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S10_L1<br>
+                            📍 B18 – Theater<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Theater and Drama (LRA105)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S2_L1<br>
+                            📍 B17 – F1.15<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div></div></div><div class="prof-card" data-prof="PROF29"><div class="prof-header">Prof. Said Sadik</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div><div class="empty">Free</div></div><div class="day-card"><div class="day-header">Monday</div>
+                        <div class="assignment">
+                          <span class="course-title">Natural Resources and Sustainability (LRA306)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S7_L2<br>
+                            📍 Hall – Green<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Natural Resources and Sustainability (LRA306)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S1_L2<br>
+                            📍 B18 – Theater<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Tuesday</div>
+                        <div class="assignment">
+                          <span class="course-title">Natural Resources and Sustainability (LRA306)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S5_L2<br>
+                            📍 B8 – G.41<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Wednesday</div>
+                        <div class="assignment">
+                          <span class="course-title">Natural Resources and Sustainability (LRA306)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S9_L2<br>
+                            📍 B18 – G.18<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Natural Resources and Sustainability (LRA306)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S3_L2<br>
+                            📍 B17 – F1.16<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Natural Resources and Sustainability (LRA306)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S8_L2<br>
+                            📍 B17 – F1.15<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Natural Resources and Sustainability (LRA306)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S4_L2<br>
+                            📍 Hall – Blue<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Thursday</div>
+                        <div class="assignment">
+                          <span class="course-title">Natural Resources and Sustainability (LRA306)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S6_L2<br>
+                            📍 B10 – Theater<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Natural Resources and Sustainability (LRA306)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S2_L2<br>
+                            📍 B17 – F1.15<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div></div></div><div class="prof-card" data-prof="PROF33"><div class="prof-header">Dr. Kenji Tanaka</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div>
+                        <div class="assignment">
+                          <span class="course-title">Japanese Language (1) (LRA401)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S1_L1<br>
+                            📍 B26 – F1.08<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Monday</div>
+                        <div class="assignment">
+                          <span class="course-title">Japanese Language (1) (LRA401)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S2_L1<br>
+                            📍 B9 – G.35<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Japanese Language (1) (LRA401)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S12_L1<br>
+                            📍 B17 – F1.15<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Japanese Language (1) (LRA401)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S10_L1<br>
+                            📍 B17 – F1.16<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Tuesday</div>
+                        <div class="assignment">
+                          <span class="course-title">Japanese Language (1) (LRA401)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S8_L1<br>
+                            📍 B17 – G.09<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Japanese Language (1) (LRA401)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S7_L1<br>
+                            📍 B26 – Theater<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Wednesday</div>
+                        <div class="assignment">
+                          <span class="course-title">Japanese Language (1) (LRA401)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S9_L1<br>
+                            📍 B26 – G.19<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Japanese Language (1) (LRA401)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S3_L1<br>
+                            📍 B17 – F1.03<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Japanese Language (1) (LRA401)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S6_L1<br>
+                            📍 B17 – F1.16<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Japanese Language (1) (LRA401)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S5_L1<br>
+                            📍 B26 – F1.08<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Thursday</div>
+                        <div class="assignment">
+                          <span class="course-title">Japanese Language (1) (LRA401)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S4_L1<br>
+                            📍 B25 – G.13<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Japanese Language (1) (LRA401)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S11_L1<br>
+                            📍 Hall – Yellow<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div></div></div><div class="prof-card" data-prof="PROF35"><div class="prof-header">Dr. Haruto Ito</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div>
+                        <div class="assignment">
+                          <span class="course-title">Japanese Language (3) (LRA403)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S7_L2<br>
+                            📍 B17 – F1.15<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Japanese Language (3) (LRA403)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S4_L2<br>
+                            📍 B8 – G.41<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Monday</div>
+                        <div class="assignment">
+                          <span class="course-title">Japanese Language (3) (LRA403)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S8_L2<br>
+                            📍 Hall – Blue<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Tuesday</div>
+                        <div class="assignment">
+                          <span class="course-title">Japanese Language (3) (LRA403)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S1_L2<br>
+                            📍 B25 – Theater 1<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Japanese Language (3) (LRA403)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S5_L2<br>
+                            📍 B17 – F1.03<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Wednesday</div>
+                        <div class="assignment">
+                          <span class="course-title">Japanese Language (3) (LRA403)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S6_L2<br>
+                            📍 B18 – G.08<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Japanese Language (3) (LRA403)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S9_L2<br>
+                            📍 B26 – F1.08<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Japanese Language (3) (LRA403)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S2_L2<br>
+                            📍 B17 – F1.03<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Thursday</div>
+                        <div class="assignment">
+                          <span class="course-title">Japanese Language (3) (LRA403)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S3_L2<br>
+                            📍 B18 – G.08<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div></div></div><div class="prof-card" data-prof="PROF36"><div class="prof-header">Prof. Eman Allam</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div><div class="empty">Free</div></div><div class="day-card"><div class="day-header">Monday</div><div class="empty">Free</div></div><div class="day-card"><div class="day-header">Tuesday</div><div class="empty">Free</div></div><div class="day-card"><div class="day-header">Wednesday</div><div class="empty">Free</div></div><div class="day-card"><div class="day-header">Thursday</div>
+                        <div class="assignment">
+                          <span class="course-title">Human Biology (BIF311)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S1_BIF_L3<br>
+                            📍 B18 – G.18<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div></div></div><div class="prof-card" data-prof="PROF37"><div class="prof-header">Dr.Ahmed El Said</div><div class="days-container"><div class="day-card"><div class="day-header">Sunday</div>
+                        <div class="assignment">
+                          <span class="course-title">Ordinary Differential Equations (ACM215)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S2_L2<br>
+                            📍 B26 – F1.13<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Probability and Statistics (MTH212)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S5_L2<br>
+                            📍 B26 – G.02<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Ordinary Differential Equations (ACM215)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S4_L2<br>
+                            📍 B26 – G.01<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Probability and Statistics (MTH212)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S1_L2<br>
+                            📍 B26 – F1.01<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Monday</div>
+                        <div class="assignment">
+                          <span class="course-title">Probability and Statistics (MTH212)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S4_L2<br>
+                            📍 B17 – F1.03<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Probability and Statistics (MTH212)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S9_L2<br>
+                            📍 B18 – Theater<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Ordinary Differential Equations (ACM215)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S3_L2<br>
+                            📍 B26 – G.02<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Tuesday</div>
+                        <div class="assignment">
+                          <span class="course-title">Probability and Statistics (MTH212)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S8_L2<br>
+                            📍 B18 – G.21<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Probability and Statistics (MTH212)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S3_L2<br>
+                            📍 B8 – G.41<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Probability and Statistics (MTH212)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S6_L2<br>
+                            📍 B26 – G.01<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Ordinary Differential Equations (ACM215)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S6_L2<br>
+                            📍 B26 – G.11<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Wednesday</div>
+                        <div class="assignment">
+                          <span class="course-title">Ordinary Differential Equations (ACM215)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S8_L2<br>
+                            📍 B8 – G.41<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Ordinary Differential Equations (ACM215)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S1_L2<br>
+                            📍 B26 – F1.16<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Ordinary Differential Equations (ACM215)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S9_L2<br>
+                            📍 B7 – G.01<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div><div class="day-card"><div class="day-header">Thursday</div>
+                        <div class="assignment">
+                          <span class="course-title">Ordinary Differential Equations (ACM215)</span>
+                          <span class="details">
+                            9:00 AM – 10:30 AM<br>
+                            👥 S7_L2<br>
+                            📍 B18 – G.21<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Probability and Statistics (MTH212)</span>
+                          <span class="details">
+                            10:45 AM – 12:15 PM<br>
+                            👥 S2_L2<br>
+                            📍 B25 – Theater 1<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Ordinary Differential Equations (ACM215)</span>
+                          <span class="details">
+                            12:30 PM – 2:00 PM<br>
+                            👥 S5_L2<br>
+                            📍 B25 – Theater 1<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        
+                        <div class="assignment">
+                          <span class="course-title">Probability and Statistics (MTH212)</span>
+                          <span class="details">
+                            2:15 PM – 3:45 PM<br>
+                            👥 S7_L2<br>
+                            📍 B25 – Theater2<br>
+                            📘 Lecture
+                          </span>
+                        </div>
+                        </div></div></div>
+</div>
+<script>
+document.getElementById('profFilter').addEventListener('change', function() {
+    const selected = this.value;
+    document.querySelectorAll('.prof-card').forEach(card => {
+        card.style.display = (selected === 'all' || card.dataset.prof === selected) ? 'block' : 'none';
+    });
+});
+</script>
+</body></html>
