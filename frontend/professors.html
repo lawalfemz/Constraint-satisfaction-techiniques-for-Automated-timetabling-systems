@@ -2563,5 +2563,14 @@ document.getElementById('profFilter').addEventListener('change', function() {
         card.style.display = (selected === 'all' || card.dataset.prof === selected) ? 'block' : 'none';
     });
 });
+// show first professor card on load so page isn't blank
+window.addEventListener('load', function() {
+  const first = document.querySelector('.prof-card');
+  if (first) {
+    first.style.display = 'block';
+    const sel = document.getElementById('profFilter');
+    if (sel) sel.value = 'all';
+  }
+});
 </script>
 </body></html>

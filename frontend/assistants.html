@@ -2914,5 +2914,16 @@ document.getElementById('assistantFilter').addEventListener('change', function()
         card.style.display = (selected === 'all' || card.dataset.assistant === selected) ? 'block' : 'none';
     });
 });
+// show first assistant card on load so page isn't blank
+window.addEventListener('load', function() {
+  const first = document.querySelector('.assistant-card');
+  if (first) {
+    // show the first card
+    first.style.display = 'block';
+    // ensure filter shows 'all' by default
+    const sel = document.getElementById('assistantFilter');
+    if (sel) sel.value = 'all';
+  }
+});
 </script>
 </body></html>
